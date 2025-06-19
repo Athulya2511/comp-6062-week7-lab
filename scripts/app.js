@@ -11,6 +11,11 @@ let fnamebyid = document.querySelector('.fruitname');
 let fcolorbyid = document.querySelector('.fruitcolor');
 let ftastebyid = document.querySelector('.fruittaste');
 
+console.log(fnamebyid);
+fnamebyid.innerHTML = name1;
+fcolorbyid.innerHTML = color;
+ftastebyid.innerHTML = taste;
+
 let numberinput = document.querySelector("#numberInput");
 numberinput.addEventListener("input",function(){
     if(numberinput.value<= -10  || numberinput.value >= 10)
@@ -18,10 +23,3 @@ numberinput.addEventListener("input",function(){
         alert("The number should be between -10 and 10");
     }
 });
-
-console.log(fnamebyid);
-fnamebyid.innerHTML = name1;
-fcolorbyid.innerHTML = color;
-ftastebyid.innerHTML = taste;
-
-
